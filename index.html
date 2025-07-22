@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Años Juntos - Nuestro Álbum de Amor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Portada Principal -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <img src="Black and White Monochrome Anniversary Photo Collage.png" alt="Nuestro Collage de Aniversario" class="hero-image">
+            <div class="hero-text">
+                <h1 class="main-title">5 Añitos de muchas Aventuras pero sobre todo mucho amor</h1>
+                <p class="subtitle">De novios a prometidos :3</p>
+                <p class="date">Mayo 28 2020 - Julio 21 2025</p>
+                <button class="scroll-btn" onclick="scrollToAlbum()">
+                    <span>Baja un potito</span>
+                    <div class="scroll-arrow">↓</div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Línea de Tiempo del Amor -->
+    <section class="timeline-intro">
+        <div class="container">
+            <h2>Nuestra Historia de Amor</h2>
+            <p>Cada foto cuenta un capítulo de nuestro hermoso viaje juntos...</p>
+        </div>
+    </section>
+
+    <!-- Álbum Principal -->
+    <section class="album" id="album">
+        <div class="container">
+            <!-- 28-05-2020- El Comienzo, en plena pandemia surgia algo wonderful -->
+            <div class="year-section">
+                <h2 class="year-title">2020 - Donde Todo Comenzó, en plena pandemia surgia algo wonderful</h2>
+                <div class="photos-grid" style="display: flex; justify-content: center; align-items: center;">
+                    <div class="photo-item" data-year="2020" style="aspect-ratio: 9/16; max-width: 320px; display: flex; flex-direction: column; align-items: center; margin: 0 auto;">
+                        <img src="imagenes/empezo.jpg" alt="Chat de cómo empezó todo" loading="lazy" style="aspect-ratio: 9/16; object-fit: cover; width: 100%; height: auto; display: block;">
+                        <div class="photo-overlay">
+                            <span class="photo-date">28 de mayo de 2020</span>
+                            <p class="photo-caption">El comienzo de nuestra historia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2021 - Nuestro Primer Año -->
+            <div class="year-section">
+                <h2 class="year-title">2020- 2021 - Nuestros Primeros Año</h2>
+                <div class="photos-grid">
+                    <div class="photo-item" data-year="2021">
+                        <img src="imagenes/20210115_142043.jpg" alt="Enero 2021" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">15 Enero 2021</span>
+                            <p class="photo-caption">Comiendo pollito kfc por primera vez, ya no te gusta xd</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2021">
+                        <img src="imagenes/20210228_202450.jpg" alt="Febrero 2021" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">28 Febrero 2021</span>
+                            <p class="photo-caption">ese tapabocas era del smat o que mamor xd</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2021">
+                        <img src="imagenes/20210528_185416.jpg" alt="Mayo 2021" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">28 Mayo 2021</span>
+                            <p class="photo-caption">Primer aniversario, un camping en la terraza.</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2021">
+                        <img src="imagenes/20210906_225608.jpg" alt="Septiembre 2021" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">6 Septiembre 2021</span>
+                            <p class="photo-caption">cine juntitos ya con anillo de promesa</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2021">
+                        <img src="imagenes/20211030_195700.jpg" alt="Octubre 2021" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">30 Octubre 2021</span>
+                            <p class="photo-caption">Halloween juntos</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2021">
+                        <img src="imagenes/20211204_005541.jpg" alt="Diciembre 2021" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">4 Diciembre 2021</span>
+                            <p class="photo-caption">Tomando tecito desde tiempos inmemoriales</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2021">
+                        <img src="imagenes/muñecos saco.jpg" alt="Diciembre 2021" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">10 Diciembre 2021</span>
+                            <p class="photo-caption">Nunca compramos el saco morado jejeje</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2021">
+                        <img src="imagenes/Leon.jpg" alt="Diciembre 2021" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">10 Diciembre 2021</span>
+                            <p class="photo-caption">Bermudez Leon despelucado</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2021">
+                        <img src="imagenes/skincare probre.jpg" alt="Diciembre 2021" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">10 Diciembre 2021</span>
+                            <p class="photo-caption">skin care probre</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2021">
+                        <img src="imagenes/20211225_194655.jpg" alt="Navidad 2021" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">25 Diciembre 2021</span>
+                            <p class="photo-caption">se colo ese niño</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2021">
+                        <img src="imagenes/esposos pimenton (2).jpg" alt="Navidad 2021" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">25 Diciembre 2021</span>
+                            <p class="photo-caption">esposos pimenton</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2022 - Aventuras del 2022 -->
+            <div class="year-section">
+                <h2 class="year-title">Aventuras del 2022</h2>
+                <div class="photos-grid">
+                    <div class="photo-item" data-year="2022">
+                        <img src="imagenes/20220721_221602.jpg" alt="Julio 2022" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">21 Julio 2022</span>
+                            <p class="photo-caption">Segundo aniversario, orale taquito y un oso que llego en uber a la fiesta</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2022">
+                        <img src="imagenes/piratas.jpg" alt="Halloween 2022" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">31 Octubre 2022</span>
+                            <p class="photo-caption">Halloween 2022, los piratas mas temidos de nuestro cuarto</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2022">
+                        <img src="imagenes/20221208_220402.jpg" alt="Diciembre 2022" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">8 Diciembre 2022</span>
+                            <p class="photo-caption">foto ramdomxd</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2022">
+                        <img src="imagenes/bautizo de la sobri.jpg" alt="Diciembre 2022" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">8 Diciembre 2022</span>
+                            <p class="photo-caption">bautizo de la sobri que me saca canas</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2022">
+                        <img src="imagenes/emputacion.jpg" alt="Diciembre 2022" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">8 Diciembre 2022</span>
+                            <p class="photo-caption">emputacion xd</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2022">
+                        <img src="imagenes/celebrando mes 28 .jpg" alt="Diciembre 2022" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">28 de febrero</span>
+                            <p class="photo-caption">celebrando un 28 comiendo ramen</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2022">
+                        <img src="imagenes/graduacion.jpg" alt="Diciembre 2022" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">28 de febrero</span>
+                            <p class="photo-caption">Graduacion :3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2023 - Fortaleciendo Nuestro Vínculo -->
+            <div class="year-section">
+                <h2 class="year-title">2023</h2>
+                <div class="photos-grid">
+                    <div class="photo-item" data-year="2023">
+                        <img src="imagenes/20231014_215353.jpg" alt="Octubre 2023" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">14 Octubre 2023</span>
+                            <p class="photo-caption">Momentos de otoño</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2023">
+                        <img src="imagenes/ramen.jpg" alt="Diciembre 2023" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">28 Diciembre 2023</span>
+                            <p class="photo-caption">plato insignia de nuestra relacion, ramencito</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2023">
+                        <img src="imagenes/20231228_165307.jpg" alt="Diciembre 2023" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">28 Diciembre 2023</span>
+                            <p class="photo-caption">ramdon con borreguitol</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2023">
+                        <img src="imagenes/cumple ramdon de tu hermno.jpg" alt="Diciembre 2023" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">28 Diciembre 2023</span>
+                            <p class="photo-caption">cumple de tu hermano en la montañal</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2023">
+                        <img src="imagenes/piquito.jpg" alt="Diciembre 2023" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">28 Diciembre 2023</span>
+                            <p class="photo-caption">muaaack</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2024 - Preparándonos para el Futuro -->
+            <div class="year-section">
+                <h2 class="year-title">2024 - Preparándonos para el Futuro</h2>
+                <div class="photos-grid">
+                    <div class="photo-item" data-year="2024">
+                        <img src="imagenes/Snapchat-1968005515.jpg" alt="Julio 2024" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">21 Julio 2024</span>
+                            <p class="photo-caption">recibiendo lo que seria nuestro futuro hogar</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2024">
+                        <img src="imagenes/20241008_195250.jpg" alt="Octubre 2024" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">8 Octubre 2024</span>
+                            <p class="photo-caption">cumple de tu hermana</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2024">
+                        <img src="imagenes/20241102_200349(0).jpg" alt="Noviembre 2024" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">2 Noviembre 2024</span>
+                            <p class="photo-caption">Días especiales</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2024">
+                        <img src="imagenes/20241102_230641.jpg" alt="Noviembre 2024" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">2 Noviembre 2024</span>
+                            <p class="photo-caption">tu cumple :3</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2024">
+                        <img src="imagenes/20241222_183333.jpg" alt="Diciembre 2024" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">22 Diciembre 2024</span>
+                            <p class="photo-caption">Ramen again</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2024">
+                        <img src="imagenes/IMG-20240721-WA004222.jpg" alt="Diciembre 2024" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">22 Diciembre 2024</span>
+                            <p class="photo-caption">mi cumpleee</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2025 - El Año del Compromiso -->
+            <div class="year-section highlight">
+                <h2 class="year-title">2025 - El Año del Compromiso 💍</h2>
+                <div class="photos-grid">
+                    <div class="photo-item" data-year="2025">
+                        <img src="imagenes/20250128_135524.jpg" alt="Enero 2025" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">28 Enero 2025</span>
+                            <p class="photo-caption">Comenzando nuestro quinto año</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2025">
+                        <img src="imagenes/20250404_201038.jpg" alt="Abril 2025" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">4 Abril 2025</span>
+                            <p class="photo-caption">Primavera de esperanza</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2025">
+                        <img src="imagenes/20250404_201123.jpg" alt="Abril 2025" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">4 Abril 2025</span>
+                            <p class="photo-caption">Momentos perfectos</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2025">
+                        <img src="imagenes/20250418_170327.jpg" alt="Abril 2025" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">18 Abril 2025</span>
+                            <p class="photo-caption">Creciendo en amor</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2025">
+                        <img src="imagenes/20250425_223439(0).jpg" alt="Abril 2025" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">25 Abril 2025</span>
+                            <p class="photo-caption">Noches de ensueño</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="2025">
+                        <img src="imagenes/20250504_214447.jpg" alt="Mayo 2025" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">4 Mayo 2025</span>
+                            <p class="photo-caption">Celebrando el amor</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Snapchat Memories -->
+            <div class="year-section">
+                <h2 class="year-title">Momentos Espontáneos 📱</h2>
+                <div class="photos-grid snapchat-grid">
+                    <div class="photo-item" data-year="snapchat">
+                        <img src="imagenes/Snapchat-1139605100.jpg" alt="Momento Snapchat" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">Recuerdo Especial</span>
+                            <p class="photo-caption">Sonrisas espontáneas</p>
+                        </div>
+                    </div>
+
+                    <div class="photo-item" data-year="snapchat">
+                        <img src="imagenes/Snapchat-243501454.jpg" alt="Momento Snapchat" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">Recuerdo Especial</span>
+                            <p class="photo-caption">Aventuras juntos</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="snapchat">
+                        <img src="imagenes/Snapchat-309938120.jpg" alt="Momento Snapchat" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">Recuerdo Especial</span>
+                            <p class="photo-caption">Risas compartidas</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="snapchat">
+                        <img src="imagenes/Snapchat-504570179.jpg" alt="Momento Snapchat" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">Recuerdo Especial</span>
+                            <p class="photo-caption">Complicidad total</p>
+                        </div>
+                    </div>
+                    <div class="photo-item" data-year="snapchat">
+                        <img src="imagenes/Snapchat-561661838.jpg" alt="Momento Snapchat" loading="lazy">
+                        <div class="photo-overlay">
+                            <span class="photo-date">Recuerdo Especial</span>
+                            <p class="photo-caption">Amor verdadero</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mensaje Final -->
+    <section class="final-message">
+        <div class="container">
+            <div class="message-content">
+                <h2>5 Años de pura fecilidad y agradecimiento a la vida por habernos cruzado</h2>
+                <h2>Te amo mucho amor de mi vida</h2>
+                <div class="hearts">💕 💍 💕</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para ver fotos -->
+    <div id="photoModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div class="modal-caption" id="modalCaption"></div>
+        <div class="modal-nav">
+            <button class="prev-btn" onclick="changePhoto(-1)">❮</button>
+            <button class="next-btn" onclick="changePhoto(1)">❯</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
