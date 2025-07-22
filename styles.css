@@ -29,13 +29,14 @@ body {
 
 /* Portada Hero Section */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--primary-black);
     overflow: hidden;
+    padding: 2rem 0;
 }
 
 .hero-overlay {
@@ -45,10 +46,10 @@ body {
     right: 0;
     bottom: 0;
     background: linear-gradient(
-        45deg,
-        rgba(0, 0, 0, 0.7) 0%,
-        rgba(0, 0, 0, 0.3) 50%,
-        rgba(0, 0, 0, 0.7) 100%
+        135deg,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.4) 50%,
+        rgba(0, 0, 0, 0.8) 100%
     );
     z-index: 1;
 }
@@ -58,20 +59,25 @@ body {
     z-index: 2;
     text-align: center;
     color: var(--pure-white);
-    max-width: 90%;
+    max-width: 95%;
+    width: 100%;
     animation: fadeInUp 1.5s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 }
 
 .hero-image {
-    max-width: 100%;
-    max-height: 60vh;
+    max-width: 80%;
+    max-height: 50vh;
     width: auto;
     height: auto;
     border-radius: 20px;
     box-shadow: 0 20px 60px var(--shadow-dark);
-    margin-bottom: 2rem;
-    filter: brightness(0.9) contrast(1.1);
+    filter: brightness(0.95) contrast(1.1);
     transition: transform 0.3s ease, filter 0.3s ease;
+    object-fit: contain;
 }
 
 .hero-image:hover {
@@ -80,13 +86,17 @@ body {
 }
 
 .hero-text {
-    margin-top: 2rem;
     animation: fadeInUp 1.8s ease-out 0.3s both;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 .main-title {
     font-family: 'Dancing Script', cursive;
-    font-size: clamp(3rem, 8vw, 6rem);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
     font-weight: 700;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px var(--shadow-dark);
@@ -94,6 +104,11 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    line-height: 1.2;
+    text-align: center;
+    max-width: 100%;
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 .subtitle {
@@ -464,6 +479,40 @@ body {
         padding: 0 1rem;
     }
     
+    .hero {
+        min-height: 100vh;
+        padding: 1rem 0;
+    }
+    
+    .hero-content {
+        max-width: 98%;
+        gap: 1.5rem;
+    }
+    
+    .hero-image {
+        max-width: 90%;
+        max-height: 40vh;
+    }
+    
+    .main-title {
+        font-size: clamp(2rem, 8vw, 3.5rem);
+        line-height: 1.1;
+        margin-bottom: 0.8rem;
+    }
+    
+    .subtitle {
+        font-size: clamp(1rem, 4vw, 1.5rem);
+    }
+    
+    .date {
+        font-size: clamp(0.9rem, 3vw, 1.2rem);
+    }
+    
+    .scroll-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+    
     .photos-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -471,10 +520,6 @@ body {
     
     .photo-item img {
         height: 250px;
-    }
-    
-    .hero-content {
-        max-width: 95%;
     }
     
     .modal-nav {
@@ -489,6 +534,42 @@ body {
 }
 
 @media (max-width: 480px) {
+    .hero {
+        padding: 0.5rem 0;
+    }
+    
+    .hero-content {
+        max-width: 99%;
+        gap: 1rem;
+    }
+    
+    .hero-image {
+        max-width: 95%;
+        max-height: 35vh;
+    }
+    
+    .main-title {
+        font-size: clamp(1.8rem, 9vw, 3rem);
+        line-height: 1.0;
+        margin-bottom: 0.5rem;
+        padding: 0 0.5rem;
+    }
+    
+    .subtitle {
+        font-size: clamp(0.9rem, 5vw, 1.3rem);
+        padding: 0 0.5rem;
+    }
+    
+    .date {
+        font-size: clamp(0.8rem, 4vw, 1.1rem);
+        padding: 0 0.5rem;
+    }
+    
+    .scroll-btn {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
     .photos-grid {
         gap: 1rem;
     }
